@@ -1,0 +1,17 @@
+
+tasks:
+  - name: Set up AWS CLI and interact with S3
+    command: |
+      # Install AWS CLI
+      pip install awscli  # or use another method depending on your environment
+      # Configure AWS CLI (run this only if you need to configure it with access keys)
+      aws configure
+      # Example of using AWS CLI to list S3 buckets
+      aws s3 ls
+
+vscode:
+  extensions:
+    - amazonwebservices.aws-toolkit-vscode  # Optional: Install AWS Toolkit extension for VSCode
+
+ports:
+  - port: 8080  # Example, if you run a service that needs a port exposed
