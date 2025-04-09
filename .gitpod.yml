@@ -8,6 +8,8 @@ tasks:
       aws configure
       # Example of using AWS CLI to list S3 buckets
       aws s3 ls
+      # install command completer
+      complete -C '/home/gitpod/.pyenv/shims/aws_completer' aws
 
 vscode:
   extensions:
